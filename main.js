@@ -746,8 +746,12 @@ async function main() {
     const url = new URL(
         // "nike.splat",
         // location.href,
-        params.get("url") || "train.splat",
-        "https://huggingface.co/cakewalk/splat-data/resolve/main/",
+        // params.get("url") || "train.splat",
+        // "https://huggingface.co/cakewalk/splat-data/resolve/main/",
+                "model.splat",
+        // params.get("url") || "train.splat",
+        // "https://huggingface.co/atian132/3dgs_model/blob/main/",
+        "https://huggingface.co/atian132/3dgs_model/resolve/main/",
     );
     const req = await fetch(url, {
         mode: "cors", // no-cors, *cors, same-origin
